@@ -1,4 +1,4 @@
-# 🚀 Unity Nodes Dashboard Pro
+#  Unity Nodes Dashboard Pro
 
 **v1.1 | By @AlpraxIsHim**
 
@@ -6,7 +6,7 @@ A powerful, feature-rich **Tampermonkey/Violentmonkey userscript** that enhances
 
 ![Dashboard Preview](https://via.placeholder.com/800x400?text=Unity+Nodes+Dashboard+Pro+Preview)
 
-## ✨ Key Features
+##  Key Features
 
 ### 📊 Advanced Analytics & Charts
 - **Interactive Graphs**: Visualize earnings with bar charts.
