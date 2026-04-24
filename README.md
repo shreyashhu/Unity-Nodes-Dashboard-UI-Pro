@@ -1,18 +1,17 @@
-# Unity Nodes Dashboard Pro v2.0
+# Unity Nodes Dashboard Pro
 
-**By @AlpraxIsHim** | [Telegram Support](https://t.me/AlpraxIsHim)
+**v2.1 | By @AlpraxIsHim** | [Telegram Support](https://t.me/AlpraxIsHim)
 
-A premium Tampermonkey userscript that transforms the Unity Nodes interface into a powerful analytics dashboard. Now featuring **Device Comparison**, **Multi-Type Charts**, and **Historical Data Export**.
+A premium Tampermonkey userscript that transforms the Unity Nodes interface into a powerful analytics dashboard. Featuring device comparison, multi-type charts, historical data export, and a polished, responsive UI.
 
+##  What's New in v2.1
 
-##  What's New in v2.0
-
--   **⚖️ Device Comparison Mode:** Compare multiple licenses/devices side-by-side. View metrics for Daily Average, Most Recent Earnings, Past 30 Days, and Total Lifetime earnings simultaneously.
--   **📈 Multi-Type Charts:** Switch between **Bar**, **Line**, and **Area** graphs to visualize your earnings trends over 7 days, 30 days, or custom timeframes.
--   **💾 Historical CSV Export:** Fixed export logic to ensure all past records and manual entries are correctly included in your CSV downloads.
--   **⏱️ Custom Auto-Refresh:** Set your own interval (10s–600s) for dashboard auto-refreshes to keep data fresh without manual reloading.
--   **✅ Active Status Fix:** Resolved an issue where active licenses were incorrectly marked as inactive.
--   **✨ UI Polish:** Improved typography, font rendering, and overall design consistency with a new Frosted Glass aesthetic.
+-   **Toast Notifications:** Replaced intrusive browser alerts with sleek, non-blocking toast notifications for actions like saving accounts or syncing sheets.
+-   **Device Sparklines:** Added mini trend graphs to the device list, allowing you to visualize recent earnings performance for each node at a glance.
+-   **Keyboard Shortcuts:** Navigate faster with hotkeys for Refresh (`R`), Settings (`S`), and View Switching (`Tab`).
+-   **Compact Mode:** A new minimize feature reduces the dashboard footprint while keeping essential balance and status info visible.
+-   **Auto-Resize Charts:** Integrated `ResizeObserver` to ensure graphs automatically redraw and adjust perfectly when you resize the dashboard window.
+-   **Systematic Improvements:** Optimized layout stability, fixed minor rendering glitches, and refined code structure for better performance.
 
 ## Core Features
 
@@ -20,12 +19,12 @@ A premium Tampermonkey userscript that transforms the Unity Nodes interface into
 -   **Interactive Graphs:** Visualize earnings with customizable chart types (Bar, Line, Area).
 -   **Time Ranges:** Analyze data over Last 7 Days, Last 30 Days, or a Custom Date Range.
 -   **Device Filtering:** Click any device in the list to isolate its earnings on the main graph.
--   **Detailed Stats:** Track lifetime earnings, recent payouts, and averages.
+-   **Comparison Mode:** Compare multiple licenses/devices side-by-side across different metrics (Recent, Daily Avg, 30D Total, Lifetime).
 
 ### Multi-Account Management
 -   Seamlessly switch between multiple Unity Nodes accounts.
 -   Persistent local storage for account credentials.
--   Easy-to-use account manager.
+-   Easy-to-use account manager with edit/remove capabilities.
 
 ### Google Sheets Integration
 -   **Auto-Sync:** Automatically push daily earnings and node stats to Google Sheets.
@@ -34,7 +33,7 @@ A premium Tampermonkey userscript that transforms the Unity Nodes interface into
 ### Customizable UI
 -   **Dark/Light Mode:** Toggle themes to suit your preference.
 -   **Theme Engine:** Customize accent colors, transparency, and glassmorphism effects.
--   **Floating Window:** Fully draggable and resizable overlay.
+-   **Floating Window:** Fully draggable and resizable overlay with snap-to-center functionality.
 
 ## Installation
 
@@ -58,12 +57,26 @@ A premium Tampermonkey userscript that transforms the Unity Nodes interface into
 3.  Copy the **Web App URL**.
 4.  Click **Sheets Setup** in the dashboard and paste the URL.
 
+### Keyboard Shortcuts
+-   `R`: Refresh Data
+-   `S`: Open Settings
+-   `Tab`: Switch between Dashboard and Comparison views
+-   `Esc`: Close Modals
+
 ### Dashboard Settings
--   **Auto-Refresh Interval:** Go to Settings (⚙️) > Refresh to set custom refresh times.
+-   **Auto-Refresh Interval:** Go to Settings > Refresh to set custom refresh times (10s–600s).
 -   **Chart Type:** Use the chart controls to switch between Bar, Line, and Area views.
 -   **Themes:** Customize colors and opacity in the Theme tab.
 
 ## Changelog
+
+### v2.1
+-   **New:** Added **Toast Notifications** for a cleaner user experience.
+-   **New:** Added **Device Sparklines** to visualize per-node trends.
+-   **New:** Implemented **Keyboard Shortcuts** for navigation.
+-   **New:** Added **Compact/Minimize Mode** for reduced footprint.
+-   **Fix:** Integrated **ResizeObserver** for dynamic chart resizing.
+-   **Improvement:** Systematic code optimization and layout stability fixes.
 
 ### v2.0
 -   **New:** Added **Comparison Mode** for side-by-side device/license analysis.
