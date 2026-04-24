@@ -4,7 +4,6 @@
 
 A premium Tampermonkey userscript that transforms the Unity Nodes interface into a powerful analytics dashboard. Now featuring **Device Comparison**, **Multi-Type Charts**, and **Historical Data Export**.
 
-![Dashboard Preview](https://via.placeholder.com/800x400?text=Unity+Nodes+Dashboard+Pro+v2.0)
 
 ## 🚀 What's New in v2.0
 
