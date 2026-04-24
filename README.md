@@ -5,7 +5,7 @@
 A premium Tampermonkey userscript that transforms the Unity Nodes interface into a powerful analytics dashboard. Now featuring **Device Comparison**, **Multi-Type Charts**, and **Historical Data Export**.
 
 
-## 🚀 What's New in v2.0
+##  What's New in v2.0
 
 -   **⚖️ Device Comparison Mode:** Compare multiple licenses/devices side-by-side. View metrics for Daily Average, Most Recent Earnings, Past 30 Days, and Total Lifetime earnings simultaneously.
 -   **📈 Multi-Type Charts:** Switch between **Bar**, **Line**, and **Area** graphs to visualize your earnings trends over 7 days, 30 days, or custom timeframes.
