@@ -1,39 +1,47 @@
 # Unity Nodes Dashboard Pro
 
-**v2.1 | By @AlpraxIsHim** | [Telegram Support](https://t.me/AlpraxIsHim)
+**v2.3 | By @AlpraxIsHim** | [Telegram Support](https://t.me/AlpraxIsHim)
 
-A premium Tampermonkey userscript that transforms the Unity Nodes interface into a powerful analytics dashboard. Featuring device comparison, multi-type charts, historical data export, and a polished, responsive UI.
+A comprehensive Tampermonkey userscript that transforms the Unity Nodes interface into a powerful analytics and management dashboard. Featuring advanced distribution charts, multi-account support, automated syncing, and a fully customizable UI.
 
-##  What's New in v2.1
+## 🚀 What's New in v2.3
 
--   **Toast Notifications:** Replaced intrusive browser alerts with sleek, non-blocking toast notifications for actions like saving accounts or syncing sheets.
--   **Device Sparklines:** Added mini trend graphs to the device list, allowing you to visualize recent earnings performance for each node at a glance.
--   **Keyboard Shortcuts:** Navigate faster with hotkeys for Refresh (`R`), Settings (`S`), and View Switching (`Tab`).
--   **Compact Mode:** A new minimize feature reduces the dashboard footprint while keeping essential balance and status info visible.
--   **Auto-Resize Charts:** Integrated `ResizeObserver` to ensure graphs automatically redraw and adjust perfectly when you resize the dashboard window.
--   **Systematic Improvements:** Optimized layout stability, fixed minor rendering glitches, and refined code structure for better performance.
+-   **License Earning Distribution Chart:** A new scatter plot visualization showing individual lease payouts over time with an average trend line. Filterable by 1, 3, 5, or 7 days to spot trends instantly.
+-   **Device Sparklines:** Mini 7-day bar charts added to each device card, providing a quick visual history of earning performance per node.
+-   **Enhanced Comparison View:** A dedicated side-by-side node comparison tool with selectable metrics (Recent, Daily Avg, 30D Total, Lifetime) for deeper analysis.
+-   **Configurable Automation:** Set custom auto-refresh intervals (from 10s to 10m) with a live countdown timer displayed in the footer.
+-   **Peak Active Nodes Tracker:** Automatically records and displays the highest number of simultaneously active nodes detected during your session.
+-   **Compact Mode:** Minimize the dashboard to a sleek balance strip view to save screen space, toggleable via the minimize button or `M` key.
+-   **Live Theme Preview:** See accent color changes in real-time within the settings modal before applying them.
 
 ## Core Features
 
 ### Advanced Analytics
--   **Interactive Graphs:** Visualize earnings with customizable chart types (Bar, Line, Area).
+-   **Multi-Type Charts:** Toggle between Bar, Line, and Area styles for the main earnings graph.
 -   **Time Ranges:** Analyze data over Last 7 Days, Last 30 Days, or a Custom Date Range.
--   **Device Filtering:** Click any device in the list to isolate its earnings on the main graph.
--   **Comparison Mode:** Compare multiple licenses/devices side-by-side across different metrics (Recent, Daily Avg, 30D Total, Lifetime).
+-   **Device Filtering:** Click any device to isolate its earnings on the main graph; click the filter badge to clear.
+-   **Detailed Stats:** Track lifetime earnings, recent payouts, daily averages, and peak activity.
 
 ### Multi-Account Management
--   Seamlessly switch between multiple Unity Nodes accounts.
--   Persistent local storage for account credentials.
--   Easy-to-use account manager with edit/remove capabilities.
+-   **Account Tabs:** Seamlessly switch between multiple Unity Nodes accounts or view "All Accounts" combined.
+-   **Manual Entry:** Log earnings manually with date, amount, node count, and notes if API data is missing.
+-   **Persistent Storage:** Account credentials and device nicknames are saved locally.
 
-### Google Sheets Integration
--   **Auto-Sync:** Automatically push daily earnings and node stats to Google Sheets.
--   **One-Click Setup:** Simple configuration via Web App URL.
+### Data & Sync
+-   **Google Sheets Integration:** Auto-sync daily earnings and node stats to Google Sheets via Webhook on every refresh.
+-   **Export Options:** Download all historical data, device stats, and account history as CSV or JSON files.
+-   **Device Nicknames:** Rename devices using the pencil icon for easier identification.
 
 ### Customizable UI
--   **Dark/Light Mode:** Toggle themes to suit your preference.
--   **Theme Engine:** Customize accent colors, transparency, and glassmorphism effects.
--   **Floating Window:** Fully draggable and resizable overlay with snap-to-center functionality.
+-   **Theme Engine:** Choose between Dark/Light modes, 8 accent color presets, and adjust glass opacity/blur intensity.
+-   **Drag & Resize:** Fully movable and resizable overlay with persistent position saving.
+-   **Keyboard Shortcuts:**
+    -   `R`: Refresh Data
+    -   `F`: Center & Fit Window
+    -   `M`: Toggle Compact Mode
+    -   `S`: Open Settings
+    -   `G`: Open Graph Range Selector
+    -   `Esc`: Clear Device Filter / Close Modals
 
 ## Installation
 
@@ -46,7 +54,7 @@ A premium Tampermonkey userscript that transforms the Unity Nodes interface into
     -   Click **"Install"** when prompted by your extension.
 
 3.  **Run:**
-    -   Navigate to [Unity Nodes Dashboard](https://manage.unitynodes.io/).
+    -   Navigate to [Unity Nodes Dashboard](https://manage.unitynodes.io/) or [UNetwork](https://manage.unetwork.io/).
     -   The dashboard overlay will load automatically.
 
 ## Configuration
@@ -55,49 +63,48 @@ A premium Tampermonkey userscript that transforms the Unity Nodes interface into
 1.  Create a Google Sheet and link it to a Google Apps Script deployment.
 2.  Deploy the script as a Web App (Access: **Anyone**).
 3.  Copy the **Web App URL**.
-4.  Click **Sheets Setup** in the dashboard and paste the URL.
-
-### Keyboard Shortcuts
--   `R`: Refresh Data
--   `S`: Open Settings
--   `Tab`: Switch between Dashboard and Comparison views
--   `Esc`: Close Modals
+4.  Click **Sheets** in the dashboard header and paste the URL.
 
 ### Dashboard Settings
--   **Auto-Refresh Interval:** Go to Settings > Refresh to set custom refresh times (10s–600s).
--   **Chart Type:** Use the chart controls to switch between Bar, Line, and Area views.
--   **Themes:** Customize colors and opacity in the Theme tab.
+-   **Auto-Refresh:** Go to Settings > Refresh to set custom intervals.
+-   **Themes:** Customize colors, opacity, and blur in the Theme tab.
+-   **Chart Types:** Use the toolbar above the main chart to switch between Bar, Line, and Area views.
 
 ## Changelog
 
+### v2.3
+-   **New:** Added **License Earning Distribution Chart** (Scatter plot with avg line).
+-   **New:** Added **Device Sparklines** for 7-day trend visualization.
+-   **New:** Enhanced **Comparison View** with metric selection.
+-   **New:** **Peak Active Nodes** tracker.
+-   **New:** **Compact/Minimize Mode** for reduced footprint.
+-   **New:** **Live Countdown Timer** for auto-refresh.
+-   **Improvement:** Real-time **Theme Preview** in settings.
+-   **Fix:** Improved error handling and resize observer integration.
+
 ### v2.1
--   **New:** Added **Toast Notifications** for a cleaner user experience.
--   **New:** Added **Device Sparklines** to visualize per-node trends.
--   **New:** Implemented **Keyboard Shortcuts** for navigation.
--   **New:** Added **Compact/Minimize Mode** for reduced footprint.
--   **Fix:** Integrated **ResizeObserver** for dynamic chart resizing.
--   **Improvement:** Systematic code optimization and layout stability fixes.
+-   **New:** Toast Notifications replacing alerts.
+-   **New:** Keyboard Shortcuts.
+-   **New:** Auto-resize charts on window resize.
 
 ### v2.0
--   **New:** Added **Comparison Mode** for side-by-side device/license analysis.
--   **New:** Added **Multi-Type Charts** (Bar, Line, Area) for better trend visualization.
--   **New:** Custom **Auto-Refresh Interval** settings.
--   **Fixed:** CSV Export now correctly includes all historical and manual records.
--   **Fixed:** Active licenses no longer incorrectly show as inactive.
--   **UI:** Improved fonts, text rendering, and overall design polish.
+-   **New:** Comparison Mode for side-by-side analysis.
+-   **New:** Multi-Type Charts (Bar, Line, Area).
+-   **New:** Custom Auto-Refresh Intervals.
+-   **Fixed:** CSV Export logic and active license status.
 
 ### v1.1
 -   Added Per-Device Graph Filtering.
 -   Added Rename Device functionality.
--   Enhanced UI with iOS-style Glassmorphism.
+-   Enhanced UI with Glassmorphism.
 
 ### v1.0
 -   Initial release with Dashboard Overlay, Multi-Account, and Sheets Sync.
 
 ## Disclaimer
--   **Use at Your Own Risk:** This script interacts with the Unity Nodes API. The author is not responsible for account issues.
--   **Not Affiliated:** This project is **not** affiliated with Unity Nodes.
--   **Security:** This script uses your local browser session token. It does not store passwords or send sensitive auth data to third parties.
+-   **Use at Your Own Risk:** This script interacts with the Unity Nodes/UNetwork API. The author is not responsible for account issues.
+-   **Not Affiliated:** This project is **not** affiliated with Unity Nodes or UNetwork.
+-   **Security:** This script uses your local browser session token. It does not store passwords or send sensitive auth data to third parties (except to your configured Google Sheet if enabled).
 
 ## Support & Suggestions
 For feature requests, bug reports, or feedback, please DM me on Telegram:  
