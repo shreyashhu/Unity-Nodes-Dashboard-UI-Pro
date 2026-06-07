@@ -1,47 +1,43 @@
-# Unity Nodes/Unetwork Dashboard Pro
+# Unity Nodes / UNetwork Dashboard Pro
 
-**v2.3 | By @AlpraxIsHim** | [Telegram Support](https://t.me/AlpraxIsHim)
+**v2.3.1 | By @AlpraxIsHim** | [Telegram Support](https://t.me/AlpraxIsHim)
 
-A comprehensive Tampermonkey userscript that transforms the Unity Nodes interface into a powerful analytics and management dashboard. Featuring advanced distribution charts, multi-account support, automated syncing, and a fully customizable UI.
+A lightweight, high-performance Tampermonkey userscript that transforms the **Unity Nodes** and **UNetwork** interfaces into a professional analytics dashboard. Featuring advanced distribution charts, multi-account management, automated syncing, and a fully customizable UI in just ~2100 lines of optimized code.
 
-## 🚀 What's New in v2.3
+## 🚀 What's New in v2.3.1
 
--   **License Earning Distribution Chart:** A new scatter plot visualization showing individual lease payouts over time with an average trend line. Filterable by 1, 3, 5, or 7 days to spot trends instantly.
--   **Device Sparklines:** Mini 7-day bar charts added to each device card, providing a quick visual history of earning performance per node.
--   **Enhanced Comparison View:** A dedicated side-by-side node comparison tool with selectable metrics (Recent, Daily Avg, 30D Total, Lifetime) for deeper analysis.
--   **Configurable Automation:** Set custom auto-refresh intervals (from 10s to 10m) with a live countdown timer displayed in the footer.
--   **Peak Active Nodes Tracker:** Automatically records and displays the highest number of simultaneously active nodes detected during your session.
--   **Compact Mode:** Minimize the dashboard to a sleek balance strip view to save screen space, toggleable via the minimize button or `M` key.
--   **Live Theme Preview:** See accent color changes in real-time within the settings modal before applying them.
+-   **Optimized Core:** Streamlined codebase from ~2800 to ~2100 lines, removing redundant logic for faster load times and smoother performance.
+-   **New Themes:** Added fresh accent colors and theme presets for enhanced visual customization.
+-   **Enhanced Sheets Sync:** Improved reliability, error handling, and data formatting for Google Sheets integration.
+-   **Bug Fixes:** Resolved minor UI glitches and improved overall stability across both platforms.
 
 ## Core Features
 
 ### Advanced Analytics
--   **Multi-Type Charts:** Toggle between Bar, Line, and Area styles for the main earnings graph.
--   **Time Ranges:** Analyze data over Last 7 Days, Last 30 Days, or a Custom Date Range.
--   **Device Filtering:** Click any device to isolate its earnings on the main graph; click the filter badge to clear.
--   **Detailed Stats:** Track lifetime earnings, recent payouts, daily averages, and peak activity.
+-   **Distribution Chart:** Scatter plot showing individual lease payouts with an average trend line (filterable by 1–7 days).
+-   **Device Sparklines:** Mini 7-day bar charts on each device card for instant trend visualization.
+-   **Multi-Type Charts:** Toggle between Bar, Line, and Area styles for main earnings graphs.
+-   **Comparison View:** Side-by-side node analysis with selectable metrics (Recent, Daily Avg, 30D, Total).
 
-### Multi-Account Management
--   **Account Tabs:** Seamlessly switch between multiple Unity Nodes accounts or view "All Accounts" combined.
--   **Manual Entry:** Log earnings manually with date, amount, node count, and notes if API data is missing.
--   **Persistent Storage:** Account credentials and device nicknames are saved locally.
+### Automation & Control
+-   **Configurable Refresh:** Set custom auto-refresh intervals (10s–10m) with a live countdown timer.
+-   **Peak Tracker:** Automatically records the highest number of simultaneously active nodes.
+-   **Compact Mode:** Minimize to a sleek balance strip view (`M` key or button).
+
+### Multi-Platform & Accounts
+-   **Dual Support:** Works seamlessly on both `manage.unitynodes.io` and `manage.unetwork.io`.
+-   **Multi-Account Tabs:** Switch between accounts or view combined stats.
+-   **Manual Entry:** Log earnings manually if API data is missing.
 
 ### Data & Sync
--   **Google Sheets Integration:** Auto-sync daily earnings and node stats to Google Sheets via Webhook on every refresh.
--   **Export Options:** Download all historical data, device stats, and account history as CSV or JSON files.
--   **Device Nicknames:** Rename devices using the pencil icon for easier identification.
+-   **Google Sheets Integration:** Auto-sync earnings via Webhook on every refresh.
+-   **Export Options:** Download historical data as CSV or JSON.
+-   **Device Nicknames:** Rename devices locally for easy identification.
 
 ### Customizable UI
--   **Theme Engine:** Choose between Dark/Light modes, 8 accent color presets, and adjust glass opacity/blur intensity.
--   **Drag & Resize:** Fully movable and resizable overlay with persistent position saving.
--   **Keyboard Shortcuts:**
-    -   `R`: Refresh Data
-    -   `F`: Center & Fit Window
-    -   `M`: Toggle Compact Mode
-    -   `S`: Open Settings
-    -   `G`: Open Graph Range Selector
-    -   `Esc`: Clear Device Filter / Close Modals
+-   **Theme Engine:** Dark/Light modes, 8+ accent colors, glass opacity, and blur control.
+-   **Drag & Resize:** Fully movable overlay with persistent position saving.
+-   **Keyboard Shortcuts:** `R` (Refresh), `F` (Fit), `M` (Minimize), `S` (Settings), `G` (Range), `Esc` (Clear Filter).
 
 ## Installation
 
@@ -51,64 +47,58 @@ A comprehensive Tampermonkey userscript that transforms the Unity Nodes interfac
 
 2.  **Install the Script:**
     -   Click the **"Raw"** button on this repository.
-    -   Click **"Install"** when prompted by your extension.
+    -   Click **"Install"** when prompted.
 
 3.  **Run:**
-    -   Navigate to [Unity Nodes Dashboard](https://manage.unitynodes.io/) or [UNetwork](https://manage.unetwork.io/).
-    -   The dashboard overlay will load automatically.
+    -   Navigate to [Unity Nodes](https://manage.unitynodes.io/) or [UNetwork](https://manage.unetwork.io/).
+    -   The dashboard will load automatically.
 
 ## Configuration
 
 ### Google Sheets Setup
-1.  Create a Google Sheet and link it to a Google Apps Script deployment.
-2.  Deploy the script as a Web App (Access: **Anyone**).
+1.  Create a Google Sheet linked to a Google Apps Script deployment.
+2.  Deploy as Web App (Access: **Anyone**).
 3.  Copy the **Web App URL**.
 4.  Click **Sheets** in the dashboard header and paste the URL.
 
-### Dashboard Settings
--   **Auto-Refresh:** Go to Settings > Refresh to set custom intervals.
--   **Themes:** Customize colors, opacity, and blur in the Theme tab.
--   **Chart Types:** Use the toolbar above the main chart to switch between Bar, Line, and Area views.
-
 ## Changelog
 
+### v2.3.1
+-   **Optimization:** Reduced code size from ~2800 to ~2100 lines for better performance.
+-   **New:** Added fresh accent colors and theme presets.
+-   **Improvement:** Enhanced Google Sheets sync reliability and data formatting.
+-   **Fix:** Resolved minor UI bugs and stability issues.
+
 ### v2.3
--   **New:** Added **License Earning Distribution Chart** (Scatter plot with avg line).
--   **New:** Added **Device Sparklines** for 7-day trend visualization.
--   **New:** Enhanced **Comparison View** with metric selection.
--   **New:** **Peak Active Nodes** tracker.
--   **New:** **Compact/Minimize Mode** for reduced footprint.
--   **New:** **Live Countdown Timer** for auto-refresh.
--   **Improvement:** Real-time **Theme Preview** in settings.
--   **Fix:** Improved error handling and resize observer integration.
+-   **New:** License Earning Distribution Chart (Scatter plot).
+-   **New:** Device Sparklines for 7-day trends.
+-   **New:** Compact/Minimize Mode & Live Countdown Timer.
+-   **New:** Peak Active Nodes tracker.
 
 ### v2.1
--   **New:** Toast Notifications replacing alerts.
--   **New:** Keyboard Shortcuts.
--   **New:** Auto-resize charts on window resize.
+-   Toast Notifications, Keyboard Shortcuts, Auto-resize charts.
 
 ### v2.0
--   **New:** Comparison Mode for side-by-side analysis.
--   **New:** Multi-Type Charts (Bar, Line, Area).
--   **New:** Custom Auto-Refresh Intervals.
--   **Fixed:** CSV Export logic and active license status.
+-   Comparison Mode, Multi-Type Charts, Custom Refresh Intervals.
 
 ### v1.1
--   Added Per-Device Graph Filtering.
--   Added Rename Device functionality.
--   Enhanced UI with Glassmorphism.
+-   **New:** Added Per-Device Graph Filtering (click a device to isolate its earnings).
+-   **New:** Device Renaming functionality via pencil icon.
+-   **UI:** Enhanced visual design with iOS-style Glassmorphism effects.
+-   **Fix:** Improved chart label readability and layout stability.
 
 ### v1.0
--   Initial release with Dashboard Overlay, Multi-Account, and Sheets Sync.
+-   **Initial Release:** Introduced the floating dashboard overlay.
+-   **Core Features:** Multi-account management, real-time earnings stats, and Google Sheets auto-sync.
+-   **Analytics:** Basic bar chart visualization for daily earnings.
+-   **UI:** Draggable and resizable window with dark/light theme support.
 
 ## Disclaimer
--   **Use at Your Own Risk:** This script interacts with the Unity Nodes/UNetwork API. The author is not responsible for account issues.
--   **Not Affiliated:** This project is **not** affiliated with Unity Nodes or UNetwork.
--   **Security:** This script uses your local browser session token. It does not store passwords or send sensitive auth data to third parties (except to your configured Google Sheet if enabled).
+-   **Use at Your Own Risk:** Not affiliated with Unity Nodes or UNetwork.
+-   **Security:** Uses local session tokens only. No passwords stored.
 
-## Support & Suggestions
-For feature requests, bug reports, or feedback, please DM me on Telegram:  
-👉 [@AlpraxIsHim](https://t.me/AlpraxIsHim)
+## Support
+For feedback or bugs, DM [@AlpraxIsHim](https://t.me/AlpraxIsHim) on Telegram.
 
 ---
 
